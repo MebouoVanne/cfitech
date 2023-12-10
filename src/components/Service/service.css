@@ -1,0 +1,25 @@
+.service-block .image {
+    padding-bottom: 20px;
+  }
+
+  .service-block  [class*="col-"] {
+    padding-bottom: 30px;
+  }
+
+  .service-block {
+    padding-top: 5px;
+  }
+
+  .title-holder {
+    text-align: center;
+    margin: 0 0 40px;
+  }
+  
+  .title-holder h2 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+  }
+  .img{
+    height: 440;
+    width: 660;
+  }

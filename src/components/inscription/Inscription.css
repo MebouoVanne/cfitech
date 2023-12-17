@@ -1,0 +1,111 @@
+form{
+    display: inline-block;
+    text-align: start;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 5px 10px 18px  #063970;
+    margin: 200px;
+}  
+
+.button{
+ text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 40px;
+
+}
+button {
+    color: #063970;
+}
+.formulaire {
+    background-color: #EA5036;
+    margin-top: 15px;
+}
+.icon{
+    font-size: 80px;
+    text-align: center;
+    color: #EA5036;
+ }
+
+ .btn.btn-primary {
+  background: #EA5036;
+  border-color: #EA5036;
+  padding: 13px 35px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background 0.3s linear, color 0.3s linear;
+  -webkit-transition: background 0.3s linear, color 0.3s linear;
+}
+
+.btn.btn-primary:focus,
+.btn.btn-primary:hover {
+  background: #fff;
+  border-color: #EA5036;
+  color: #EA5036;
+}
+
+.btn.btn-primary .fas {
+  margin: 0 0 0 6px;
+  font-size: 15px;
+}
+
+/* 
+ p{
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 18px;
+ } */
+ 
+
+label {
+    font-size: 25px;
+}
+
+input[type=text]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+input[type=tel]::-webkit-input-placeholder,
+input[type=search]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: gray;
+}
+
+input[type=text]::-moz-placeholder,
+input[type=email]::-moz-placeholder,
+input[type=tel]::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1;
+  color: gray;
+}
+
+input[type=text]:-moz-placeholder,
+input[type=email]:-moz-placeholder,
+input[type=tel]:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: gray;
+}
+
+input[type=text]:-ms-input-placeholder,
+input[type=email]:-ms-input-placeholder,
+input[type=tel]:-ms-input-placeholder,
+input[type=search]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: gray;
+}
+
+input[type=text].placeholder,
+input[type=email].placeholder,
+input[type=tel].placeholder,
+textarea.placeholder {
+  color: gray;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus {
+  outline: none;
+}

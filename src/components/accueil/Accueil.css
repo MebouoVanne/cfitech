@@ -1,16 +1,16 @@
 .objectifs{
-    background-color:#11C6DF;
+    background-color:#EA5036;
     margin: 0px;
 }
 .photo{
     height: 200px;
     width: 150px;
 }
-.services-block .icon {
+.accueil-block .icon {
     width: 60px;
     height: 60px;
     font-size: 26px;
-    color: #f64b4b;
+    color: #EA5036;
     margin: 0 0 20px;
     display: inline-block;
     vertical-align: middle;
@@ -20,41 +20,57 @@
     -webkit-transition: all 0.3s linear;
   }
   
-  .services-block .icon .fas {
+  .accueil-block .icon .fas {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     line-height: 2;
   }
-  contact
-  .services-block .row {
+
+  .accueil-block .row {
     margin: 0 -15px 50px;
   }
   
-  .services-block .row:last-child {
+  .accueil-block .row:last-child {
     margin: 0 -15px;
   }
   
-  .services-block .holder {
+  .accueil-block .holder {
     transition: all 0.3s linear;
+
   }
   
-  .services-block .holder:hover {
+  .accueil-block .holder:hover {
     margin-top: -5px;
   }
   
-  .services-block .holder:hover .icon {
+  .accueil-block .holder:hover .icon {
     box-shadow: inset 0 0 0 30px #f64b4b;
     color: #fff;
     font-size: 18px;
   }
 
   .formationCertifiante{
-    background-color: #FAC126;
+
+    border:2px solid #FAC126 ;
   }
   .formationModulaire{
-    background-color: #E4013B;
+    border:2px solid #FAC126 ;
   }
   .chequeTic{
-    background-color: #23B3C7;
+    border:2px solid #FAC126 ;
   }
+
+  .photoPartenaire{
+   height: 200px;
+   width: 400px;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+.ensembleFormation{
+  background-color: rgba(0  , 0, 0, 0.1);
+  margin-top: 0;
+}

@@ -11,50 +11,63 @@ import photo2 from "../../assets/images/photo2.png"
 import photo3 from "../../assets/images/photo3.png"
 import partenaires from "../../assets/images/partenaires.png"
 import "./Accueil.css"
+import CarouselPartenaire from '../carousel/CarouselPartenaire';
+import Formateur from '../formateurs/Formteur';
+import CarouselFormations from '../carousel/CarouselFormations';
 
 export default function Accueil() {
   const servicesData = [
     {
       id: 1,
+      link: '/formationinitiation',
       icon: 'fas fa-clone',
       title: 'Initiation en informatique',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, vel! Accusantium hic fugiat laudantiu earum consequuntur, unde nam et mollitia eaque incidunt sed.'
     },
     {
       id: 2,
+      link: '/formationHelpdesk',
       icon: 'fas fa-snowflake',
       title: 'Formation helpdesk informatique ',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, vel! Accusantium hic fugiat laudantiu earum consequuntur, unde nam et mollitia eaque incidunt sed.'
     },
     {
       id: 3,
+      link: '/formationTechnicien',
       icon: 'fas fa-plug',
       title: 'Formation Technicien pc et reseau ',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, vel! Accusantium hic fugiat laudantiu earum consequuntur, unde nam et mollitia eaque incidunt sed.'
     },
     {
       id: 4,
+      link: '/formationWeb',
       icon: 'fas fa-desktop',
       title: 'Formation web developer',
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, vel! Accusantium hic fugiat laudantiu earum consequuntur, unde nam et mollitia eaque incidunt sed.'
     },
   ]
   return (
+    <>
+    
+    <section id="accueil" className=" accueil-block">
+    <CarouselFormations/>
     <Container>
     <Row>
-      <Col sm={8}>
-      <Image src={imgAccueil1} rounded />
-      </Col>
-      <Col sm={4} className='objectifs'>
-        <h3>Formez Vous</h3>
+
+    <Col sm={12} className='objectifs'>
+        <h1>Formez Vous</h1>
         <p>
         Bienvenue sur notre page de formation en Web Développement et Maintenance PC, où vous pourrez acquérir les compétences nécessaires pour exceller dans le domaine passionnant de la technologie.
         Cette formation vise à vous enseigner les fondements du développement web et les compétences techniques essentielles pour devenir un technicien PC qualifié
         </p>
       </Col>
+      <Col sm={6}>
+      <Image src={imgAccueil1} rounded />
+      </Col>
+ 
     </Row>
-    <Row>
-      <Col sm={4}></Col>
+ 
+      {/* <Col sm={4}></Col>
       <Col sm={4}>
         <br/>
        <p>Chez CFITECH, nous fusionnons l'innovation et l'éducation pour vous offrir une expérience d'apprentissage immersive. Explorez les langages du web, maîtrisez les compétences techniques du développement, et devenez un expert en technologie PC.</p>
@@ -81,9 +94,11 @@ Notre engagement envers votre succès se traduit par une approche holistique, pr
       </Col>
       <Col sm={4}>
       <Image src={photo3} rounded  className='photo'/>
-      </Col>
-    </Row>
-    <section id="services" className="block services-block">
+      </Col> */}
+
+
+    <Formateur/>
+    <h2>Nos Formations</h2>
     <Row>
           {
             servicesData.map(services => {
@@ -93,7 +108,8 @@ Notre engagement envers votre succès se traduit par une approche holistique, pr
                     <i className={services.icon}></i>
                   </div>
                   <h3>{services.title}</h3>
-                  <p>{services.description}</p>
+                  <p>{services.description} <a className="btn btn-primary" href={services.link} > En savoir plus <i className="fas fa-chevron-right"></i></a></p>
+                  
                 </Col>
               );
             })
@@ -103,30 +119,34 @@ Notre engagement envers votre succès se traduit par une approche holistique, pr
       <Col sm={12}>
       <Image src={imgAccueil1} rounded />
       </Col>
-    </Row>
-        <Row>
+       </Row  >
+        <Row className='ensembleFormation'>
         <Col className='formationCertifiante'>
-        <h3>Formation certifiante</h3>
+        <h2>Formation certifiante</h2>
         <p>Dans le cadre de notre formation de Technicien(ne) Support PC & Réseaux, vous aurez la possibilité de participer à des évaluations externes afin d'obtenir un certificat de compétences acquises en formation délivré par Bruxelles-formation. (CECAF)</p>
         </Col>
         <Col className='formationModulaire'>  
-        <h3>Formation modulaire</h3>
+        <h2>Formation modulaire</h2>
         <p>Aujourd'hui, l'informatique est devenue un outil indispensable tant dans le cadre familial que dans le cadre professionnel, nous vous proposons des formations modulaires à la carte afin d'acquérir une autonomie numérique.)</p>
         </Col>
         <Col className='chequeTic'>
-        <h3>Chèques TIC Actiris</h3>
+        <h2>Chèques TIC Actiris</h2>
         <p>Avec les chèques TIC d'Actiris, améliorez vos connaissances dans la création de site internet. Suivez des formations web de type court à Bruxelles. Et augmentez vos compétences dans la création de sites web, le traitement de photos, la création de logos,…</p>
         </Col>
       </Row>
-      <Row>
+      {/* <Row>
       <Col sm={2}></Col>
 
       <Col sm={10}>
       <Image src={partenaires} rounded  className='photoPartenaire'/>
       </Col>
-    </Row>
+    </Row> */}
+
+
+    
+    </Container>
     </section>
 
-  </Container>
+    </>
   )
 }

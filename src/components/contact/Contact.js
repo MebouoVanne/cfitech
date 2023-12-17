@@ -13,7 +13,7 @@ function Contact() {
     <>
      <Image src={img4} fluid />;
     <section id="contact" className="block contact-block">
-    <Container fluid>
+
         <div className='contact-info'>
           <ul>
             <li>
@@ -34,9 +34,6 @@ function Contact() {
             </li>
           </ul>
         </div>
-      </Container>
-        
-    <Container fluid>
 
         <Form className='contact-form'>
         <div className="title-holder">
@@ -66,14 +63,16 @@ function Contact() {
             <Button variant='primary' type="submit" size="lg">Envoyer</Button>
           </div>
         </Form>
-      </Container>
+
 
       <div className='google-map'>
         <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14048.211570060965!2d-0.1228208876550775!3d51.505942908931324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1481805868782"></iframe>
       </div>
       
     </section>
+
     </>
+
   );
 }
 

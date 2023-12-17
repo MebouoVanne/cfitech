@@ -5,7 +5,7 @@
     right: 0;
     top: 0;
     z-index: 9999;
-    background: #11C6DF;
+    background: #fff;
     box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
     transition: all 0.5s linear;
   }
@@ -17,7 +17,7 @@
   }
   
   #header .navbar-brand {
-    color: #f64b4b;
+    color: #EA5036;
     text-transform: uppercase;
     font-weight: 600;
     height: auto;
@@ -47,7 +47,7 @@
   #header .navbar-collapse a:hover,
   #header .navbar-collapse a.active {
     background: none;
-    color: #f64b4b;
+    color: #EA5036;
   }
   
   #header .navbar-collapse a:hover:before,
@@ -59,7 +59,7 @@
   
   #header .navbar-collapse a:before {
     content: '';
-    background: #f64b4b;
+    background: #EA5036;
     height: 1px;
     position: absolute;
     bottom: 7px;

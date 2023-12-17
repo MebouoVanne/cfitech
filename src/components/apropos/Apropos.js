@@ -6,14 +6,16 @@ import Image from 'react-bootstrap/Image';
 import img1 from "../../assets/images/img1.png"
 import img2 from "../../assets/images/img2.png"
 import img3 from "../../assets/images/img3.png"
+import apropos from "../../assets/images/apropos.png"
 import "./Apropos.css"
-import { Carousel } from 'bootstrap';
 
 export default function Apropos() {
   return (
-    <section id="about" className="block about-block">
+    
+    <section  className='block apropos-block' >
         
-    <Container fluid>
+    <Container fluid >
+    <Image src={apropos} style={{height:"400px",width:"100%"}} fluid />;
 
       <Row>
         <Col sm={12}>
@@ -24,15 +26,15 @@ export default function Apropos() {
         <Image src={img1} />
         </Col>
         <Col sm={6}>
-        <h2>Le fondateur du centre de formation</h2>
+        <h2>ce qu'il faut savoir sur CFITECH</h2>
           <p>CFITECH, Centre de formation informatique et webmaster dispense des formations hybrides (présentiel/distanciel) dans divers domaines de l’informatique. Notre Centre agréé par Actiris et Bruxelles Formation délivre une formation certifiante. Nos cours se focalisent principalement sur la maintenance PC/Réseaux et le web développement. Mais aussi, des formations privées courtes par le biais des chèques-Tic d’Actiris. Et d’autres actions sociales sont entreprises, notamment la formation de jeunes à des ateliers ludiques et gratuits de contenu divers lié à l’informatique, 
             tous les mercredis après midi. (Contrat de quartier durable)</p>
         </Col>
         <Col sm={12}>
-        <h2 className='title'>Mission de notre centre de formation en informatique.</h2>
+        <h1 className='title'>Mission de notre centre de formation en informatique.</h1>
         </Col>
         <Col sm={6}>
-        <h2>Le fondateur du centre de formation</h2>
+        <h2>Notre missionn</h2>
           <p>Notre mission est d’être au service des demandeurs d’emploi en général et en particulier les personnes sans CESS à la recherche d’un emploi. Nous existons parce qu’ils ont besoin d’acquérir de nouvelles compétences dans l’IT pour une insertion professionnelle. Il est question pour nous de leur donner confiance en l’avenir. Ceci passe par l’encadrement qu’ils reçoivent, le suivi dont ils bénéficient et surtout la qualité du savoir qui leur est transmis. Les nombreux ateliers pratiques leur permettent d’être confrontés aux réalités du métier</p>
         </Col>
         <Col sm={6}>
@@ -48,5 +50,5 @@ export default function Apropos() {
       </Row>
     </Container>
   </section>
-  )
+   )
 }

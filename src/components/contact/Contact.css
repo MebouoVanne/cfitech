@@ -1,5 +1,4 @@
 
-  .block
   .contact-block {
     position: relative;
     align-items: center;
@@ -32,6 +31,10 @@
     border-radius: 5px;
   }
   
+  .contact-info{
+    padding-bottom: 220px;
+    margin-bottom: 200px;
+  }
   .contact-block .contact-info ul {
     text-align: center;
   }
@@ -46,14 +49,15 @@
     display: block;
     font-size: 40px;
     margin: 0 0 15px;
-    color: #23B3C7;
+    color: #EA5036;
   }
   .title{
     text-align: center;
   }
 
  .contact-form{
-  background-color: aliceblue;
+  background-color: rgba(234, 80, 54, 0.7);
+
 
  }
 

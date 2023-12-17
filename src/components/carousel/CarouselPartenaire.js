@@ -2,7 +2,8 @@ import React from 'react'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-
+import Carousel from 'react-bootstrap/Carousel';
+import { Container } from 'react-bootstrap';
 export default function CarouselPartenaire() {
     var partenaireCfitech = [
         {
@@ -32,20 +33,39 @@ export default function CarouselPartenaire() {
         
       ]
   return (
-    <section id="home" className="hero-block-partenaire">
-        <Row className='portfoliolist'>
-          {
-            partenaireCfitech.map(partenaire => {
-              return (
-                <Col sm={4} key={partenaire.id}>
-                  <div className='portfolio-wrapper'>
-                      <Image src={partenaire.image} style={{height:"100px"}} />
-                  </div>
-                </Col>
-              );
-            })
-          }
-        </Row>
-    </section>
+    // <section id="home" className="hero-block-partenaire">
+    //     <Row className='portfoliolist'>
+    //       {
+    //         partenaireCfitech.map(partenaire => {
+    //           return (
+    //             <Col sm={4} key={partenaire.id}>
+    //               <div className='portfolio-wrapper'>
+    //                   <Image src={partenaire.image} style={{height:"100px"}} />
+    //               </div>
+    //             </Col>
+    //           );
+    //         })
+    //       }
+    //     </Row>
+    // </section>
+
+    <section id="partenaires" className="block partenaires-block">
+    <Container fluid>
+      <Row className='portfoliolist'>
+        {
+          partenaireCfitech.map(partenaire => {
+            return (
+              <Col sm={2} key={partenaire.id}>
+                <div className='portfolio-wrapper'>
+                    <Image src={partenaire.image} />
+                </div>
+              </Col>
+            );
+          })
+        }
+      </Row>
+    </Container>  
+  </section>
+ 
   )
 }

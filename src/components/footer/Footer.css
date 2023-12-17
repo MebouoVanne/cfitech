@@ -31,7 +31,7 @@
     width: 55px;
     height: 55px;
     background: #fff;
-    color: #f64b4b;
+    color: #EA5036;
     border-radius: 50%;
     display: block;
     text-align: center;
@@ -41,7 +41,7 @@
   }
   
   .socials a:hover {
-    background: #f64b4b;
+    background: #EA5036;
     color: #fff;
   }
   
@@ -62,4 +62,12 @@ span{
 }
 #about{
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+#footer {
+  background: #EA5036;
+  padding: 25px 0;
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
 }

@@ -124,7 +124,9 @@ import LogoPage from '../LogoPage';
 
 export default function Footer() {
   return (
-    <section id="about" className="block about-block">
+
+    <footer id='footer'>
+           <section id="about" className="block about-block">
     <Container fluid>
       <Row>
         <Col sm={5}>
@@ -172,5 +174,7 @@ export default function Footer() {
       </Row>
     </Container>
   </section>
+    </footer>
+  
   )
 }

@@ -7,7 +7,7 @@ import "./Header.css"
 
 export default function Header() {
   return ( 
-    <section  id="header">
+    <header  id="header">
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">
@@ -26,7 +26,7 @@ export default function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    </section>
+    </header>
   )
 }
 
